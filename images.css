@@ -1,0 +1,229 @@
+.inner {
+    padding: 2rem;
+}
+
+
+.btn {
+    display: flex;
+    background-color: var(--main-block-color);
+    color: var(--accent-color);
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.btn.filter {
+    width: 5rem;
+    float: left;
+}
+.btn.add {
+    float: right;
+    width: 9rem;
+}
+
+::placeholder {
+    color: var(--main-block-color);
+}
+.search {
+    float: right;
+    height: 1.5rem;
+    margin-left: 1rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    padding: 0.25rem;
+    padding-left: 0.75rem;
+    color: var(--main-block-color);
+}
+.btn h1 {
+    font-weight: 300;
+
+}
+
+.month .title {
+    margin-top: 3rem;
+    text-transform: none;
+}
+
+.line {
+    margin-top: -0.5rem;
+    height: 0.2rem;
+    width: 100%;
+    background-color: var(--main-block-color);
+    margin-bottom: 1rem;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+
+}
+.image {
+    cursor: pointer;
+}
+
+.image .picture {
+    width: 15em;
+    height: 24em;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-image: url(IMG_20220509_160220.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.image:nth-child(2) .picture {
+    background-image: url(IMG_20210815_145315.jpg);
+}
+.image:nth-child(3) .picture {
+    background-image: url(IMG_20210813_184416.jpg);
+}
+
+
+
+
+
+
+
+
+.image .picture:hover {
+    filter: brightness(110%);
+}
+
+.image .date {
+    display: flex;
+    background-color: var(--main-block-color);
+    height: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+
+
+.darken {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+}
+.darken.active {
+    visibility: visible;
+}
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+}
+.close-button ion-icon {
+    font-size: 3rem;
+    color: var(--main-block-color);
+    transition: 0.5s;
+}
+.close-button ion-icon:hover {
+    color: var(--text-color);
+}
+.arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    transition: border-left 0.5s, border-right 0.5s;
+    cursor: pointer;    
+}
+.selected-image {
+    background-color: azure;
+    width: 50vh;
+    height: 80vh;
+    margin: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+.arrow.next {
+    border-left: 2em solid var(--text-color);
+}
+.arrow.prev {
+    border-right: 2em solid var(--text-color);
+}
+.arrow.next:hover {
+    border-left: 2em solid var(--main-title-color);
+}
+.arrow.prev:hover {
+    border-right: 2em solid var(--main-title-color);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .inner {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .btn {
+        height: 2rem;
+        border-radius: 2rem;
+    }
+    .btn.filter {
+        width: 6rem;
+        float: left;
+    }
+    .btn.add {
+        float: right;
+        width: 11rem;
+    }
+    .search {
+        height: 1.5rem;
+        margin-left: 1rem;
+        border-radius: 3rem;
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+    .btn h1 {
+        font-weight: 300;
+    
+    }
+    .month .title {
+        font-size: 1.7rem;
+        margin-top: 7rem;
+    }
+    .images {
+        column-gap: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    
+    }
+
+    .image .picture {
+        width: 7.5em;
+        height: 11em;
+    }
+    .image .date {
+        height: 1.2rem;
+    }
+    .date p {
+        font-size: 0.8rem;
+    }
+  }

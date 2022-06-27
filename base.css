@@ -1,0 +1,179 @@
+:root,
+:root.default {
+    --main-bg-color: #219ebc;
+    --main-block-color: #023047;
+    --main-title-color: #fb8500;
+    --accent-color: #ffb703;
+    --text-color: #8ecae6;
+}
+:root.contrast {
+    --main-bg-color: #3d5a80;
+    --main-block-color: #293241;
+    --main-title-color: #ee6c4d;
+    --accent-color: #f7984a;
+    --text-color: #e0fbfc;
+}
+:root.black {
+    --main-bg-color: #00171f;
+    --main-block-color: #003459;
+    --main-title-color: #007ea7;
+    --accent-color: #e800b6;
+    --text-color: #ffffff;
+}
+:root.pink {
+    --main-bg-color: #1e1b18;
+    --main-block-color: #0a2463;
+    --main-title-color: #d8315b;
+    --accent-color: #ff89a6;
+    --text-color: #fffaff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--main-bg-color);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+  }
+  
+
+
+.nav {
+    position: relative;
+    background-color: var(--main-block-color);
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+.circle {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--accent-color);
+    border-radius: 3.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.circle h1 {
+    color: var(--main-block-color);
+    font-size: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+.nav .title {
+    cursor: pointer;
+}
+.profile {
+    position: absolute;
+    width: 12rem;
+    height: 3rem;
+    background-color: var(--text-color);
+    right: 0.5rem;
+    border-radius: 0.6rem;
+}
+.selectors {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+
+.logs {
+    position: absolute;
+    bottom: 0rem;
+    right: 0.1rem;
+    display: flex;
+}
+.login {
+    color: var(--accent-color);
+}
+.signup {
+    color: var(--main-title-color);
+}
+
+.login:hover {
+    color: var(--main-title-color);
+}
+.signup:hover {
+    color: var(--text-color);
+}
+.selectors a:hover {
+    color: var(--accent-color);
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav {
+        padding-top: 3rem;
+    }
+    .circle {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .circle h1 {
+        font-size: 1.3rem;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .profile {
+        position: absolute;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--text-color);
+        right: 0.5rem;
+        border-radius: 0.6rem;
+    }
+    .selectors {
+        margin-top: 2rem;
+    }
+    a {
+        font-size: 0.9em;
+        transition: 0.5s;
+    }
+    
+    
+    .logs {
+        position: absolute;
+        bottom: 6.5rem;
+        right: 0.1rem;
+        display: flex;
+        margin-right: -0.5rem;
+    }
+}
