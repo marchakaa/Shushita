@@ -1,5 +1,5 @@
 let darkenEl = document.querySelector(".darken")
-let closeButtonEl = document.querySelector(".close-button")
+let closeButtonEl = document.querySelector(".darken .close-button")
 
 let prevArrowEl = document.querySelector(".arrow.prev");
 let nextArrowEl = document.querySelector(".arrow.next");
@@ -42,3 +42,15 @@ function prevImage() {
     if (img == -1) img = 0;
     openImage(img);
 }
+
+
+closeUploadButtonEl = document.querySelector(".upload-menu .close-button")
+uploadMenuEl = document.querySelector(".upload-menu")
+buttonAddEl = document.querySelector(".btn.add")
+
+buttonAddEl.addEventListener("click", function() {
+    uploadMenuEl.className = "upload-menu active"
+})
+closeUploadButtonEl.addEventListener("click", function() {
+    uploadMenuEl.className = "upload-menu"
+})
