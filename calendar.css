@@ -205,3 +205,40 @@
     align-items: center;
     color: var(--main-block-color);
 }
+
+
+@media only screen and (max-width: 600px) {
+    
+.items {
+    padding-top: 2rem;
+    display: block;
+}
+.items .block {
+    width: 100%;
+    border-radius: 0rem;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 2rem;
+}
+.arrow {
+    top: 1.2rem;
+}
+.arrow:nth-child(1) {
+    left: 10%;
+}
+.arrow:nth-child(3) {
+    right: 10%;
+}
+.calendar-menu .dates td p{
+    font-size: 0.8rem;
+    right: 0.2rem;
+}
+.block.image {
+    height: 80vh;
+}
+.block.movies {
+    padding-left: 1rem;
+}
+
+}
