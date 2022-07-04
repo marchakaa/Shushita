@@ -185,6 +185,7 @@
     transform: translate(-50%, -50%);
     padding: 2rem;
     visibility: hidden;
+    text-align: center;
 }
 .upload-menu h1 {
     color: var(--main-title-color);
@@ -200,7 +201,9 @@
 .upload-menu.active {
     visibility: visible;
 }
-
+.upload-menu .date-upload {
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     .inner {

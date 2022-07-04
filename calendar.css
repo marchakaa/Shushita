@@ -1,0 +1,207 @@
+
+
+.items {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items .block {
+    width: calc(30% - 4rem);
+    height: calc(100vh - 14rem);
+    background-color: var(--main-block-color);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+.block:nth-child(1) {
+    height: fit-content;
+}
+.calendar {
+    position: relative;
+}
+.calendar .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.arrow {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid transparent;
+    top: 2.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.arrow:nth-child(1) {
+    left: 5rem;
+    border-right: 1.3rem solid var(--text-color);
+}
+.arrow:nth-child(3) {
+    right: 5rem;
+    border-left: 1.3rem solid var(--text-color);
+}
+.arrow:nth-child(1):hover {
+    border-right: 1.3rem solid var(--accent-color);
+}
+.arrow:nth-child(3):hover {
+    border-left: 1.3rem solid var(--accent-color);
+}
+
+
+
+
+
+
+
+.calendar-menu {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    display: table;
+    width: 100%;
+}
+.calendar-menu tr {
+    display: table-row;
+}
+
+.calendar-menu .weekdays td {
+    display: table-cell;
+    padding-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.calendar-menu .dates td {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    color: gray;
+}
+.calendar-menu .dates td p{
+    position: absolute;
+    top: 0;
+    font-size: 0.8rem;
+    right: 0.5rem;
+}
+.calendar-menu .dates .curr {
+    color: azure;
+    transition: 0.5s;
+}
+.calendar-menu .dates .today {
+    color: var(--main-title-color);
+}
+.calendar-menu .dates .curr:hover {
+    color: var(--accent-color);
+}
+
+
+
+
+.calendar .buttons {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+}
+.calendar .buttons .btn {
+    position: relative;
+    width: 45%;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: var(--main-block-color);
+    border: var(--main-bg-color) 0.1rem solid;
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.calendar .buttons .btn:hover {
+    color: azure;
+    border: var(--accent-color) 0.1rem solid;
+}
+
+.block .title {
+    font-size: 1.8rem;
+    text-transform: none;
+}
+
+.block.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block.image .picture {
+    background-color: var(--main-bg-color);
+    width: 90%;
+    height: 75%;
+    border-radius: 0.5rem;
+}
+
+.block.movies {
+    position: relative;
+}
+.block.movies .list {
+    float: left;
+    text-align: left;
+    height: 80%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.block.movies .list .movie{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    column-gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.list .movie .box {
+    width: 1rem;
+    height: 1rem;
+    border: var(--main-bg-color) solid 0.1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.list .movie .box ion-icon{
+    visibility: hidden;
+}
+.list .movie .name {
+    font-size: 1.2rem;
+}
+
+.movie.watched .box {
+    border: var(--accent-color) solid 0.1rem;
+}
+.movie.watched .box ion-icon{
+    visibility: visible;
+    color: var(--main-title-color);
+}
+.movie.watched .name {
+    color: var(--accent-color);
+    text-decoration: line-through;
+}
+.movies .button {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-block-color);
+}

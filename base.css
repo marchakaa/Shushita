@@ -88,12 +88,18 @@
 }
 .profile {
     position: absolute;
-    width: 12rem;
+    width: 3rem;
     height: 3rem;
-    background-color: var(--text-color);
     right: 0.5rem;
     border-radius: 0.6rem;
+    background-color: #00171f;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
 .selectors {
     position: relative;
 }
@@ -153,12 +159,8 @@ body {
         margin-bottom: 0.5rem;
     }
     .profile {
-        position: absolute;
         width: 2.5rem;
         height: 2.5rem;
-        background-color: var(--text-color);
-        right: 0.5rem;
-        border-radius: 0.6rem;
     }
     .selectors {
         margin-top: 2rem;

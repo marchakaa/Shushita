@@ -54,3 +54,13 @@ buttonAddEl.addEventListener("click", function() {
 closeUploadButtonEl.addEventListener("click", function() {
     uploadMenuEl.className = "upload-menu"
 })
+
+
+date = document.querySelector(".upload-menu .date")
+dateUploadEl = document.querySelector(".upload-menu .date-upload")
+
+date.addEventListener("input", function() {
+    let dates = date.value.split("-")
+    dateUploadEl.value = dates[0] + '-' + dates[2] + '-' + dates[1]
+    console.log(dateUploadEl.value)
+})
