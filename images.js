@@ -64,3 +64,15 @@ date.addEventListener("input", function() {
     dateUploadEl.value = dates[0] + '-' + dates[2] + '-' + dates[1]
     console.log(dateUploadEl.value)
 })
+
+
+
+let selectedImageEl = document.querySelector(".selected-image");
+selectedImageEl.addEventListener("click", function(e) {
+    let menuEl = document.querySelector(".darken .menu")
+    if (menuEl.className == "menu") {
+        menuEl.className = "menu down"
+    } else {
+        menuEl.className = "menu"
+    }
+})
