@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="home.css">
 </head>
@@ -43,51 +43,30 @@
         <div class="part">
             <h1 class="title">Shushday</h1>
             <div class="section">
-                <div class="selection">
-                    <p class="name">Mood</p>
-                    <div class="icons">
-                        <div class="icon active"></div>
-                        <div class="icon-name active">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                    </div>
-                </div>
-                <div class="selection">
-                    <p class="name">Mood</p>
-                    <div class="icons">
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">very happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">very happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">very happy</div>
-                    </div>
-                </div>
-                <div class="selection">
-                    <p class="name">Mood</p>
-                    <div class="icons">
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                        <div class="icon"></div>
-                        <div class="icon-name">happy</div>
-                    </div>
-                </div>
+                <table>
+                  <tr>
+                    <td class="active"><div class="icon" style="background-image: url('happy.png');" id="icon-very-happy"></div><p class="icon-name">very happy</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">happy</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">neutral</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">sad</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">very sad</p></td>
+
+                  </tr>
+                  <tr>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">sunny</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">rainy</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">storm</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">thunder</p></td>
+                    <td><div class="icon" style="background-image: url('happy.png');"></div><p class="icon-name">windy</p></td>
+                  </tr>
+                  <tr>
+                    <td><div class="icon"></div><p class="icon-name"></p></td>
+                    <td><div class="icon"></div><p class="icon-name"></p></td>
+                    <td><div class="icon"></div><p class="icon-name"></p></td>
+                    <td><div class="icon"></div><p class="icon-name"></p></td>
+                    <td><div class="icon"></div><p class="icon-name"></p></td>
+                  </tr>
+                </table>
             </div>
         </div>
 
@@ -116,7 +95,7 @@
                 <div class="message">
                     <h1 class="title">Love You</h1>
                     <p class="text">
-                        Your  Shushi <br> is thinking <br> of you now
+                        Your  Shushi <br> is tdinking <br> of you now
                     </p>
                 </div>
             </div>
@@ -145,6 +124,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="base.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
